@@ -48,3 +48,11 @@ wrapper {
     gradleVersion = "5.1.1"
     distributionType = Wrapper.DistributionType.ALL
 }
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file://localhost/tmp/myRepo/")
+        }
+    }
+}
